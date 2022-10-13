@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "rightchat",
+  "version": "${version}",
+  "name": "RightChat",
+  "description": "Move the chat to the right of the screen",
+  "authors": [
+    "jmb19905"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/rightchat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.jmb19905.rightchat.RightChat"
+    ],
+    "modmenu": [
+      "net.jmb19905.rightchat.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "rightchat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "minecraft": "1.19.2"
+  }
+}
